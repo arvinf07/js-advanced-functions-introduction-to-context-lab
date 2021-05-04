@@ -48,13 +48,13 @@ function hoursWorkedOnDate(empRecord, date){
     return timeOut.date === date
   })
 
-  timeIn = (timeIn.hour).toString()
-  timeOut = (timeOut.hour).toString()
+  // timeIn = (timeIn.hour).toString()
+  // timeOut = (timeOut.hour).toString()
 
-  timeIn = timeIn[1] != 0 ? timeIn.slice(0,2) : timeIn[0]
-  timeOut = timeOut[1] != 0 ? timeOut.slice(0,2) : timeOut[0]
+  // timeIn = timeIn[1] != 0 ? timeIn.slice(0,2) : timeIn[0]
+  // timeOut = timeOut[1] != 0 ? timeOut.slice(0,2) : timeOut[0]
 
-  return timeOut - timeIn
+  return (timeOut.hour - timeIn.hour) / 100
 }
 
 function wagesEarnedOnDate(empRecord, date){
